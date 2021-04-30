@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="../js/contactenos.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>PAGINA WEB ESCUELA NORMAL SUPERIOR LA HACIENDA</title>
+    </head>
+    <body>
+        <header>
+      <nav class="navbar navbar-expand-lg nav nav-pills navbar-light bg-danger">
+          <div class="container-fluid">
+            <img src="../img/1.png" alt="" width="120" height="100" class="d-inline-block align-text-top rounded-circle">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../html/inicio.html"><h1><i>ENSH</i></h1></a>
+            </li>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./Folclor_deportes.html">Folclor y Deportes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./Educación.html">Educación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./Matricula.html">Matrícula</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light active" href="./Contactenos.html">Contactenos</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" onclick="limpiar()" href="../index.html">Cerrar sesion</a>
+                </li>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <br>
+      <div class="container ">
+        <div class="card border-success p-4">
+            <div class="card-header text-center bg-info text-light" style="font-size: 20px;">Formulario de sugerencias</div>
+          <div class="row ">
+              <div class="col-lg-4">
+                <br>
+                <form id="miForm">
+                 <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" class="form-control">
+      
+      
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" class="form-control">
+      
+      
+                  <label for="correo">Correo</label>
+                  <input type="email" id="correo" class="form-control">
+      
+      
+                  <label for="telefono">Telefono</label>
+                  <input type="number" id="telefono" class="form-control">
+      
+                  <label for="direccion">Direccion</label>
+                  <input type="text" id="direccion" class="form-control">
+      
+                  <label for="fecha">Fecha de nacimiento</label>
+                  <input type="date" id="fecha" class="form-control">
+                  <label for="formacion">Formacion</label>
+                  <select class="form-control" id="formacion">
+                      <option selected >Seleccionar</option>
+                      <option value="Primaria">Primaria</option>
+                      <option value="Secundaria">Secundaria</option>
+                      <option value="Tecnico">Tecnico</option>
+                      <option value="Tecnologo">Tecnologo</option>
+                      <option value="Profesional">Profesional</option>
+                  </select><br>
+                  <label for="Motivo">Motivo</label>
+                  <select class="form-control" id="motivo">
+                    <option selected >Seleccionar</option>
+                    <option value="Duda">Duda</option>
+                    <option value="Error">Error</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                </select><br>
+              </div>
+      
+      
+              <div class="col-lg-4 p-3 ">
+                  <label for="snombre">Segundo Nombre</label>
+                  <input type="text" id="snombre" class="form-control">
+                  <label for="sapellido">Segundo Apellido</label>
+                  <input type="text" class="form-control" id="sapellido">
+                  <label for="identificacion">Identificacion</label>
+                  <input type="number" id="identificacion" class="form-control">
+                  <label for="celular">Celular</label>
+                  <input type="number" id="celular" class="form-control">
+                  <label for="años">Edad</label>
+                  <input type="number" id="años" class="form-control">
+                  <label for="genero">Genero</label>
+                  <select class="form-control" id="genero">
+                      <option selected >Seleccionar</option>
+                      <option value="Hombre">Hombre</option>
+                      <option value="Mujer">Mujer</option>
+                  </select><br>
+                  <textarea id="sugerencia" cols="45" rows="5" placeholder="Dejanos tu sugerencia"></textarea>
+                </form>
+              </div>
+      
+              <div class="col-lg-4 p-3 text-center">  <div class="col-lg 4">
+                <iframe class="embed-responsive-item w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7462005711095!2d-74.81692275011245!3d10.982519658321669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d173ff01747%3A0x6e79e97c7a0da8bc!2sEscuela%20Normal%20Superior%20La%20Hacienda!5e0!3m2!1ses!2sco!4v1612560387727!5m2!1ses!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                
+            </div><br>
+            <img src="../img/Agradable.jpg" class="img-fluid d-none d-sm-block" alt="..." >
+                  <br><br>
+                      
+                  </div>
+          </div>
+          <div class="text-center">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn w-auto btn-outline-danger " onclick="vaciar()"><b>LIMPIAR</b></button>
+            <button id="env" class="btn w-auto btn-outline-success  " onclick="procesar()"><b>REGISTRAR</b></button> 
+         <button id="edi"  class="btn btn-outline-warning" onclick="Actualizar()" ><b>EDITAR</b></button>
+        </div>
+          </div>
+
+        </div>
+      </div>
+      <br><br>
+    <div class="container-fluid d-none d-sm-block">
+      
+      <table class="table table-hover " id="tabla"> 
+        
+
+
+      </table>
+    
+  </div>
+      <br><br>
+      <div class="container-fluid bg-danger" >
+        <footer>
+          <div class="containter text-center">
+              <h2 class="fs-5 text-light">©<i>Escuela normal Superior la hacienda</i> llamar 01800032567 Cra. 35 #72, Barranquilla, Atlántico escnh23@gmail.com</h2><br>
+          </div>
+      </footer>
+      </div>
+          </body>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="../js/contactenos.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      </html>
